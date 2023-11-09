@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <h1>Cadastro dos Pacientes</h1>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+            <h2 class="form-title">Atenção ao preencher as informações!</h2>
+            <p>Preencham todas as informações para que a confirmação do agendamento seja encaminhada de forma correta!</p>
+            <form>
+                <div class="box-input">
+                    <label for="title">Nome completo da criança <span class="required-field">*</span></label>
+                    <input type="text" name="name" id="name" class="block" 
+                    placeholder="Nome completo" required>
+                </div>
+                <div class="box-input">
+                    <label for="title">Nome completo do responsável <span class="required-field">*</span></label>
+                    <input type="text" name="name_respons" id="name_respons" class="block" 
+                    placeholder="Nome do Responsável" required>
+                <div class="box-input">
+                <p class="respons">Tipo de responsável: <span class="required-field">*</span></p>
+            <ul class="optional-list">
+                <li>
+                <input type="radio" id="Mae" name="respons">
+                <label for="mae">Mãe</label>
+                </li>
+                <li>
+                <input type="radio" id="pai" name="respons">
+                <label for="pai">Pai</label>
+                </li>
+                <li>
+                <input type="radio" id="grandm" name="respons">
+                <label for="grandm">Avó</label>
+                </li>
+                <li>
+                <input type="radio" id="grandp" name="respons">
+                <label for="grandp">Avô</label>
+                </li>
+                <li>
+                <input type="radio" id="uncle" name="respons">
+                <label for="uncle">Tia/Tio</label>
+                </li>
+                <li>
+                <input type="radio" id="other" name="respons">
+                <label for="other">Outro</label>
+                </li>
+            </ul>
+                <br>
+                <label for="comment">Caso seja outro(a) de quem se trata:</label><br>
+                <textarea name="comment" cols="10" rows="1"></textarea>
+                </div>
+                
+                <div class="box-input">
+                    <label for="title">Telefone para contato: <span class="required-field">*</span></label>
+                    <input type="number" name="telephone" id="telephone" class="block" placeholder="Digite o número de contato(wpp)" required>
+                </div>
+                <div class="box-input">
+                    <label for="title">Dia em que irá comparecer:<span class="required-field">*</span></label>
+                    <input type="date" name="date_visit" id="date_visit" class="block">
+                </div>
+                <div class="box-input">
+                    <label for="title">Horário em que irá comparecer:<span class="required-field">*</span></label>
+                    <input type="time" name="hour" id="hour" class="block" required>
+                </div>
+            <div class="box-input">
+               <p>Nome da telefonista que agendou:</p>
+               <ul class="optional-list">
+            <li>
+                <input type="radio" name="winner">
+                <label for="isabela">Isabela</label>
+            </li>
+            <li>
+                <input type="radio" name="winner">
+                <label for="maria">Maria</label>
+            </li>
+            <li>
+                <input type="radio" name="winner">
+                <label for="antonia">Antonia</label>
+            </li>
+            <li>
+                <input type="radio" name="winner">
+                <label for="julia">Julia</label>
+            </li>
+            <li>
+                <input type="radio" name="winner">
+                <label for="elisabeth">Elisabeth</label>
+            </li>
+            </ul>
+            </div>
+                <div class="box-input">
+                    <label for="comment">Observações:</label><br>
+                    <textarea name="comment" id="comment" placeholder="Caso exista alguma observação, deixe registrado aqui"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar" class="btn-submit">
+                <input type="reset" value="Limpar" class="btn-reset">
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
